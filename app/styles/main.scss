@@ -1,0 +1,18 @@
+/* =========================================================================
+ *   Project: Blacklist
+ *   Author: Andrzej Kałowski
+ *   $id: main.scss
+ *  ========================================================================= */
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+// Styles reset
+@import "reset";
+
+// Authored Dependencies
+@import "mixins";
+
+// Styles & layouts
+@import "layout";

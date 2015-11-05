@@ -1,0 +1,39 @@
+<div class="panel">
+    
+  <!-- input-field -->
+  <section class="input-area" ng-style="" />
+    <form id="form">
+      <p class="input-description">Email address:</p>
+      <input type="text" class="input-field" placeholder="email@example.com" ng-model="item" />
+      <button class="accent-button" ng-click="addNewItem(item)">Add to blacklist</button>
+    </form>
+  </section>
+  <!-- end input-field -->
+
+  <hr class="top-horizontal-line">
+  
+  <section class="">
+    <table class="">
+      <!-- blacklist header -->
+      <thead>
+        <tr class="blacklist-header" ng-style="listHeader" />
+          <td class="element">{{blacklist.value}}</td>
+          <td class="element">{{blacklist.joined}}</td>
+          <td class="header-right-element"></td>
+        </tr>
+      </thead>
+      <!-- end blacklist header -->
+      
+      <!-- blacklist content -->
+      <tbody class="blacklist-content">
+        <tr class="blacklist-area" ng-repeat="item in blacklist.items">
+          <td class="element">{{item.mail}}</td>
+          <td class="element">{{item.dateStamp | date:'dd-MM-yyyy'}}</td>
+          <td class="right-element"><button class="alert-button" ng-click="removeItem(item)">Remove</button></td>
+        </tr>
+      </tbody>
+      <!-- end blacklist content -->
+    </table>
+  </section>
+
+</div>

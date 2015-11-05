@@ -1,0 +1,35 @@
+/** ====================================================================================
+ *  Project: Blacklist
+ *  Author: Andrzej Kałowski
+ *  $id: mixins.scss
+ *  ====================================================================================
+ */
+
+/* Buttons */
+@mixin standard-button($color: $very-bright-color, $background-color: $accent-color) {
+  color: $color;
+  background-color: $background-color;
+  font-size: $main-font-size;
+  text-decoration: none;
+  line-height: $font-line-height;
+}
+
+/* Lines */
+@mixin horizontal-line($color: lighten($accent-color, 43)) {
+  background: $color;
+  background-position: bottom;
+}
+
+/* Border radius */
+@mixin border-radius-mix($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* Transitions */
+@mixin transition($length: 0.3s) {
+  transition: all $length ease-in-out;
+}
