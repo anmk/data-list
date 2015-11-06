@@ -1,0 +1,1 @@
+Datalist is a simple application that adds and removes data. It was written using Angular.JS. In addition, I used Yeoman Generator Angular, HTML, CSS and Sass. The menu has been made using CSS Sprites.
